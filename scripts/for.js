@@ -38,12 +38,12 @@ for(let i=1; i<10; i++){
     danResult[2].innerHTML += result;
 }
 
+
 // 구구단 2단 0으로 시작한 예시
 for(let i=0; i<9; i++){
     let result =`2x${i+1}=${(i+1)*2}`;
     console.log(result);
 }
-
 
 
 //자바스크립트 10번 반복 출력 (반복문 없을때)

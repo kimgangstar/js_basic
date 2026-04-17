@@ -1,0 +1,40 @@
+body,html {scroll-behavior: smooth;} /* 스크롤에 애니메이션 추가 */
+body {
+    /* height: 300vh;  test용 높이값 */
+    background: linear-gradient(white,black);
+}
+.popup {
+    position: fixed; right: 30px; bottom: 30px;
+}
+.popup .top {
+    background: #fff; border-radius: 50%;
+    width: 50px; height: 50px;
+    text-align: center; line-height: 50px; /* 플렉스 안쓰고 쉽게 가운데 맞추기.. 이거 메모 */
+    display: block; 
+}
+
+main .thumnail {
+    height: 60vh; background-color: yellowgreen; 
+    text-align: center; line-height: 60vh;
+}
+main .category_title {
+    position: sticky; top: 0; 
+    /* top0 에 오면 부모가 끝날때까지 그 위치에 고정시키기 */
+    display: flex; flex-flow: row nowrap;
+    padding: 20px 0;
+    justify-content: center; align-items: center;
+}
+main .category_title a {flex: 1; text-align: center;}
+main .category_title a.active {
+    background-color: white; line-height: 40px;
+}
+main .category_contents {}
+main .category_contents section {
+    height: 100vh; text-align: center; 
+    font-size: 1.5rem; font-weight: 500;
+} /* test 값 */
+main .category_contents .product {}
+main .category_contents .review {}
+main .category_contents .recommend {}
+main .category_contents .refund {}
+footer {height: 30vh; background-color: yellow;}
